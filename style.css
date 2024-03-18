@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.app{
+    position: relative;
+    width: 80%;
+    max-width: 400px;
+    /* background: linear-gradient(to top, #091017, #060c11, #08313f ); */
+    background-image: url('images/beautiful-shining-stars-night-sky_181624-622.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    margin: 100px auto 0;
+    border-radius: 5%;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+.app::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, #09101775, #060c112c, #08313f63 ); 
+    z-index: 1;
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input{
+    border: 0;
+    outline: 0;
+    flex: 1;
+    height: 40px;
+    border-radius: 20px;
+    margin-right: 20px;
+    background-color:#fff ;
+    color: #333;
+    padding: 10px 20px;
+}
+.search button{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding:20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+}
+.search button img{
+    width: 10px;
+}
+.breakdown h2{
+    font-size: 70px;
+    font-weight: 500px;
+}
+.breakdown h3{
+    font-size: 30px;
+    font-weight: 200px;
+    margin-top: -15px;
+}
+.weather-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.cols{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.cols img{
+    margin-right:10px;
+    width: 40px;
+}
+.more{
+
+    position: relative;
+    display: none;
+    grid-template-columns: repeat(4, 1fr);
+    place-content: center;
+    background-image: url('images/beautiful-shining-stars-night-sky_181624-622.jpg');
+    background-size: cover;
+    background-position: center;
+    /* background: #08313f; */
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.more::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #138eff; 
+    z-index: 1;
+}
+.more-data img{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+.error{
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    display: none;
+}
+.current-date{
+    font-size: 24px;
+    padding: 10px;
+}
