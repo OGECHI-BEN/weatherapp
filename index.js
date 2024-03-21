@@ -6,7 +6,7 @@ const apiKey="891b0dbcb1d010da0ede46f4a263effd";
 const apiUrl ="https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 const weatherImage =document.querySelector('.image-icon')
 let searchArea = document.querySelector(".search input");
-let searchButton = document.querySelector(".search button")
+let searchButton = document.querySelector(".search button");
 //async function checkWeather(city){} = const getWeather = async (city)=>{}; the first is a normal function the second is an arrow function
 
 const getWeather = async (city) => {

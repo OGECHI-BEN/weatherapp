@@ -14,7 +14,7 @@
     background-position: center;
     z-index: 0;
     margin: 100px auto 0;
-    border-radius: 5%;
+    border-radius: 20px;
     padding: 20px;
     text-align: center;
     color: #fff;
@@ -119,4 +119,7 @@
 .current-date{
     font-size: 24px;
     padding: 10px;
+}
+.breakdown{
+    display: none;
 }
